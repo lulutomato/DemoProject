@@ -2,6 +2,7 @@ package org.iclass.vo;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,4 +43,5 @@ class PagingTest {
 		
 	}
 
-}
+	}
+

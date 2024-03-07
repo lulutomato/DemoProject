@@ -47,7 +47,7 @@
 				  </form>
 				  <hr>
 				  <a href="join" class="f-sm">아직 회원이 아니시면 회원 가입을 해주세요.</a><br>
-            	  <a href="help" class="f-sm">😑 비밀번호 찾기가 필요하신가요?</a>
+            	  <a href="help" class="f-sm">🤬 비밀번호 찾기가 필요하신가요?</a>
 				</div>
 		</div>
 </div>
