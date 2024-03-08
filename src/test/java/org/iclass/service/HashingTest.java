@@ -15,7 +15,7 @@ class HashingTest {
 			String hashvalue =  service.encrypt("1111");
 			log.info("1111 해시 값 : {}",hashvalue);
 			hashvalue = service.encrypt("thGH123!@4");
-			log.info("1111 해시 값 : {}",hashvalue);
+			log.info("thGH123!@4 해시 값 : {}",hashvalue);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
