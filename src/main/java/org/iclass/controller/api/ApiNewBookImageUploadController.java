@@ -26,7 +26,7 @@ public class ApiNewBookImageUploadController implements Controller {
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//서버에 전송될 위치(파일시스템 경로)
-		String path = "C:\\upload";
+		String path = "D:\\class20231228\\upload";
 		
 		//업로드 가능한 최대 크기(바이트)
 		int maxSize = 10*1024*1024;		//1024바이트=1KB, 10MByte로 설정

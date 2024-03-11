@@ -9,7 +9,7 @@ function tossPayInit() {
 
 
    const customerKey = crypto.randomUUID()  //"VUEWF1yYWn17zOh3L6Wot" // 내 상점에서 고객을 구분하기 위해 발급한 고객의 고유 ID(임의값)
-	 refs/heads/main
+	 
 //    const coupon = document.getElementById("coupon-box")
 	console.log('customerkey',customerKey)
     const button = document.getElementById("payment-button")

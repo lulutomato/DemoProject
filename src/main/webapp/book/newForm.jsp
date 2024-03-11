@@ -23,6 +23,7 @@ request객체의 contextPath를 el로 접근할 때에는 현재 jsp 객체 page
 			<h3>새로나온 책 </h3>
 			<p class="sub">새로 나온 책을 소개해 주세요. </p>
 			<hr style="color:white;">
+			<!--이 form은 동기통신으로 서버에 제출됩니다.  -->
 			<form method="post" action="new" enctype="multipart/form-data">
 				<input type="hidden" name="userid" value="${user.userid }">
 			 <table>
@@ -47,6 +48,7 @@ request객체의 contextPath를 el로 접근할 때에는 현재 jsp 객체 page
 			 	- 글에 이미지를 포함할 수 있습니다.</label></th> </tr>
 			 	<tr>
 			 		<td colspan="2">
+			 		<!--quill 에디터 ui 가 표시되는 영역 -->
 			 		<div id="editor"></div>
 					<input type="hidden" id="quill_html" name="summary">
 			 		</td>

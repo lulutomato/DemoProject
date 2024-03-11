@@ -116,6 +116,7 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/api/auth/join", "POST"), new ApiMemberJoinController() );
 
 		mapping.put(new RequestKeyValue("/api/book", "GET"), new ApiGetBookOneController() );
+		mapping.put(new RequestKeyValue("/api/pay", "POST"), new ApiPaymentSaveController() );
 
 
 		mapping.put(new RequestKeyValue("/api/book", "GET"), new ApiGetBookOneController() );
