@@ -31,11 +31,6 @@
 				<p>판매 중인 중고도서입니다.</p>
 				<hr style="color:white;">
 
-				<c:if test="${user !=null}">
-					<div style="text-align: center;">
-					<a href="form"> 판매등록</a>
-					</div>
-					</c:if>
 
 					<c:if test="${user !=null }">
 						<div style="text-align: center;">
