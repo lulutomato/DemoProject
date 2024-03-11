@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="css/join.css" /> 
     <script>
-      window.addEventListener('message', (e) => {
+    /* sms.jsp 에서 인증하기 성공하면 메시지를 보낸것 window.opener.postMessage(~~~)을 받는 이벤트 입니다.  */
+      window.addEventListener('message', (e) => {			//윈도우에서 메시지 수신이 있을 때
 		  console.log('-->',e.data);
         if (e && e.data) {
           const res = JSON.parse(e.data);
@@ -99,7 +100,7 @@
       var isChecked = false;
 
       function join() {
-    	  
+    	 //
     	const fav =  document.querySelector('#favorites')	  
     	fav.value = fav.value + ',' + document.querySelector('#etc').value
     	  
@@ -126,7 +127,7 @@
         if(!isChecked) {
           alert("아이디 중복확인을 해주세요.");
           return;
-        }
+        }	//isChecked 가 참일때 중복검사했던 아이디와 현재 username이 같은지 비교 필요합니다.
 
         if(data.password == "") {
           alert("비밀번호를 입력하세요.");
@@ -225,7 +226,7 @@
           $("#username").focus();
           return;
         }
-
+        // form 태그안의 모든 요소값을 자바스크립트 객체로 생성합니다.
         const data = $('#form').serializeObject();
         var idRule = /^[a-z]+[a-z0-9]{5,11}$/g;
         if(!idRule.test(data.username)){
@@ -234,6 +235,7 @@
             return;
         }
 		console.log('request data',data);
+		// 비동기 통신을 위한 jquerry (순수자바스크립트의 XMLHttpRequest 를 쉽게 사용하도록 합니다.)
         $.ajax({
           url        : './api/auth/checkId',
           data       : data,
@@ -241,7 +243,7 @@
           type       : 'post',
         /* json 으로 직렬화 하지 않고 보내기 */
         /*   contentType: 'application/json', */
-          success : function(res){
+          success : function(res){	//요청 성공하면 응답을 res 변수에 저장.
         	console.log('/api/auth/checkId',res) ;
         	if (!res.isExist) {
 	            alert("사용 가능한 아이디입니다.");
