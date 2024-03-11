@@ -22,7 +22,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">회원 탈퇴</h4>
-        <button type="button" class="btn-close" onclick="location.href='/DemoProj'"></button>
+        <button type="button" class="btn-close" onclick="location.href='/DemoProject'"></button>
       </div>
 
       <!-- Modal body -->
@@ -32,7 +32,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" onclick="location.href='/DemoProj'">Close</button>
+        <button type="button" class="btn btn-danger" onclick="location.href='/DemoProject'">Close</button>
       </div>
 
     </div>
